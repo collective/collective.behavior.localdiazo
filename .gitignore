@@ -31,3 +31,4 @@ local.cfg
 src/plone.*
 collective.behavior.localdiazo.nja
 src/collective.behavior.localregistry/
+coverage/
