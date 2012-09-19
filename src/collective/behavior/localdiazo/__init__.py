@@ -1,8 +1,3 @@
-import zope.i18nmessageid
+from zope.i18nmessageid import MessageFactory
 
-MessageFactory = \
-    zope.i18nmessageid.MessageFactory(u"collective.behavior.localdiazo")
-
-
-def initialize(context):
-    """Initializer called when used as a Zope 2 product."""
+MessageFactory = MessageFactory(u"collective.behavior.localdiazo")
