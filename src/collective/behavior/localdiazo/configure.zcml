@@ -14,7 +14,7 @@
         title="Local diazo theme"
         description="Dexterity behavior to enable a local diazo theme."
         provides=".behavior.ILocalDiazo"
-        for="collective.behavior.localregistry.behavior.ILocalRegistryEnabled"        
+        for="collective.behavior.localregistry.behavior.ILocalRegistry"        
         />
 
 	<utility

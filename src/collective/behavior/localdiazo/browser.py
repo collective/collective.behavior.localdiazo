@@ -16,7 +16,6 @@ class LocalRegistrySetter(BrowserView):
         registry = queryUtility(IRegistry)
         if registry != self.context['local_registry']:
             return
-        import ipdb;ipdb.set_trace()
         settings = registry.forInterface(IThemeSettings, False)
         themes = getAvailableThemes()
         for theme in themes:

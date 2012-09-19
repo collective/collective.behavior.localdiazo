@@ -15,6 +15,10 @@ class CollectiveBehaviorLocalDiazo(PloneSandboxLayer):
         xmlconfig.file('configure.zcml',
                        plone.app.dexterity,
                        context=configurationContext)
+        import collective.behavior.localregistry
+        xmlconfig.file('configure.zcml',
+                       collective.behavior.localregistry,
+                       context=configurationContext)
         import collective.behavior.localdiazo
         xmlconfig.file('configure.zcml',
                        collective.behavior.localdiazo,
