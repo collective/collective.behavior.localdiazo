@@ -11,7 +11,7 @@ long_description = open("README.txt").read() + "\n" + \
 
 setup(name='collective.behavior.localdiazo',
       version=version,
-      description="Dexterity behavior to enable a local diazo theme.",
+      description="Dexterity behavior to enable a local Diazo theme.",
       long_description=long_description,
       classifiers=[
         "Development Status :: 4 - Beta",
