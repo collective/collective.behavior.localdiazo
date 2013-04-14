@@ -47,6 +47,7 @@ setup(name='collective.behavior.localdiazo',
       install_requires=[
           'collective.behavior.localregistry',
           'plone.app.theming',
+          'plone.behavior',
           'plone.directives.form',
           'plone.registry',
           'setuptools',
