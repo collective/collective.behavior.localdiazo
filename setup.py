@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 
-from setuptools import setup, find_packages
+from setuptools import find_packages
+from setuptools import setup
+
 import os
 
 version = '1.0.dev0'
@@ -16,21 +18,21 @@ setup(name='collective.behavior.localdiazo',
       description="Dexterity behavior to enable a local Diazo theme.",
       long_description=long_description,
       classifiers=[
-        "Development Status :: 4 - Beta",
-        "Environment :: Web Environment",
-        "Framework :: Plone",
-        "Framework :: Plone :: 4.1",
-        "Framework :: Plone :: 4.2",
-        "Framework :: Plone :: 4.3",
-        "Intended Audience :: End Users/Desktop",
-        "Intended Audience :: System Administrators",
-        "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
-        "Operating System :: OS Independent",
-        "Programming Language :: Python",
-        "Programming Language :: Python :: 2.6",
-        "Programming Language :: Python :: 2.7",
-        "Topic :: Office/Business :: News/Diary",
-        "Topic :: Software Development :: Libraries :: Python Modules",
+          "Development Status :: 4 - Beta",
+          "Environment :: Web Environment",
+          "Framework :: Plone",
+          "Framework :: Plone :: 4.1",
+          "Framework :: Plone :: 4.2",
+          "Framework :: Plone :: 4.3",
+          "Intended Audience :: End Users/Desktop",
+          "Intended Audience :: System Administrators",
+          "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 2.6",
+          "Programming Language :: Python :: 2.7",
+          "Topic :: Office/Business :: News/Diary",
+          "Topic :: Software Development :: Libraries :: Python Modules",
       ],
       keywords='plone registry local behavior dexterity diazo',
       author='',
@@ -68,8 +70,7 @@ setup(name='collective.behavior.localdiazo',
           ]
       },
       entry_points="""
-      # -*- Entry points: -*-
-        [z3c.autoinclude.plugin]
-        target = plone
+      [z3c.autoinclude.plugin]
+      target = plone
       """,
       )
