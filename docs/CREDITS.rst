@@ -1,6 +1,12 @@
-Note:  place names and roles of the people who contribute to this package
-       in this file, one to a line, like so:
+Share and Enjoy
+---------------
 
-- Joe Schmoe, Original Author
-- Bob Slob, contributed monkey patches
-- Jane Main, wrote flibberty module
+``collective.behavior.localdiazo`` would not have been possible without the
+contribution of the following people:
+
+- Juan Pablo Giménez
+- Héctor Velarde
+
+You can find an updated list of package contributors on `GitHub`_.
+
+.. _`GitHub`: https://github.com/collective/collective.behavior.localdiazo/contributors
