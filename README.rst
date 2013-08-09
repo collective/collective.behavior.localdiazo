@@ -15,8 +15,8 @@ Mostly Harmless
 .. image:: https://secure.travis-ci.org/collective/collective.behavior.localdiazo.png?branch=master
     :target: http://travis-ci.org/collective/collective.behavior.localdiazo
 
-.. image:: https://coveralls.io/repos/collective/collective.behavior.localdiazo/badge.png
-    :target: https://coveralls.io/r/collective/collective.behavior.localdiazo?branch=master
+.. image:: https://coveralls.io/repos/collective/collective.behavior.localdiazo/badge.png?branch=master
+    :target: https://coveralls.io/r/collective/collective.behavior.localdiazo
 
 Got an idea? Found a bug? Let us know by `opening a support ticket`_.
 
