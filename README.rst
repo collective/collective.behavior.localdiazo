@@ -13,7 +13,9 @@ Mostly Harmless
 ---------------
 
 Got an idea? Found a bug? Let us know by `opening a support ticket`_.
-    :target: http://travis-ci.org/collective/collective.behavior.localdiazo?branch=master
+
+.. image:: https://secure.travis-ci.org/collective/collective.behavior.localdiazo.png?branch=master
+    :target: http://travis-ci.org/collective/collective.behavior.localdiazo
 
 Don't Panic
 -----------
@@ -81,4 +83,4 @@ Diazo theming is enabled on 'Theme settings'.
     :height: 430px
     :width: 700px
 
-.. _`opening a support ticket`: https://github.com/simplesconsultoria/collective.behavior.localdiazo/issues
+.. _`opening a support ticket`: https://github.com/collective/collective.behavior.localdiazo/issues
