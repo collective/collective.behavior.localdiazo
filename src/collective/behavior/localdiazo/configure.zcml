@@ -10,8 +10,8 @@
     <five:registerPackage package="." />
 
     <plone:behavior
-        title="Local diazo theme"
-        description="Dexterity behavior to enable a local diazo theme."
+        title="Local Diazo theme"
+        description="Dexterity behavior to enable a local Diazo theme."
         provides=".behavior.ILocalDiazo"
         for="collective.behavior.localregistry.behavior.ILocalRegistry"        
         />
