@@ -12,10 +12,13 @@ Dexterity behavior to enable a local Diazo theme.
 Mostly Harmless
 ---------------
 
-Got an idea? Found a bug? Let us know by `opening a support ticket`_.
-
 .. image:: https://secure.travis-ci.org/collective/collective.behavior.localdiazo.png?branch=master
     :target: http://travis-ci.org/collective/collective.behavior.localdiazo
+
+.. image:: https://coveralls.io/repos/collective/collective.behavior.localdiazo/badge.png
+    :target: https://coveralls.io/r/collective/collective.behavior.localdiazo?branch=master
+
+Got an idea? Found a bug? Let us know by `opening a support ticket`_.
 
 Don't Panic
 -----------
