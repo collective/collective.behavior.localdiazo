@@ -86,4 +86,19 @@ Diazo theming is enabled on 'Theme settings'.
     :height: 430px
     :width: 700px
 
+Not entirely unlike
+-------------------
+
+You may also want to take a look on the following packages:
+
+`collective.lineage`_
+    Lineage is a Plone product that allows subfolders of a Plone site to
+    appear as autonomous Plone sites to the everyday user.
+
+`collective.spaces`_
+    collective.spaces is a simple way of creating mini-sites within the Plone
+    CMS, with each mini-site based on a fully-customisable template.
+
+.. _`collective.lineage`: https://pypi.python.org/pypi/collective.lineage
+.. _`collective.spaces`: https://pypi.python.org/pypi/collective.spaces
 .. _`opening a support ticket`: https://github.com/collective/collective.behavior.localdiazo/issues
