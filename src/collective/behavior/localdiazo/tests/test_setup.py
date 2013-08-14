@@ -14,6 +14,7 @@ from collective.behavior.localdiazo.testing import\
 
 TESTFILES = [
     ('../behavior.rst', COLLECTIVE_BEHAVIOR_LOCALDIAZO_INTEGRATION_TESTING),
+    ('../browser.rst', COLLECTIVE_BEHAVIOR_LOCALDIAZO_INTEGRATION_TESTING),
 ]
 
 optionflags = doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS

@@ -39,10 +39,12 @@ What actually happens is::
     >>> from zope.component.hooks import setSite
     >>> setSite(child)
     
-An now we can go on as if we are after publishers traversal::
+An now we can go on as if we are after publishers traversal.
+Once we set the theme for ```child``` folder, we check that
+theme settings has been correctly applied::
 
-    >>> child.theme = 
-    >>> from plone.registry.interfaces import IRegistry     
-    >>> child_registry = getUtility(IRegistry)
-    >>> child_registry
-    <LocalRegistry at /plone/child/local_registry>
+    >>> child.theme = u'/++theme++example/rules.xml'
+    >>> child.restrictedTraverse('@@local-diazo-setter')()
+    >>> registry = child['local_registry']
+    >>> from plone.app.theming.interfaces import IThemeSettings
+    >>> settings = registry.forInterface(IThemeSettings, False)
