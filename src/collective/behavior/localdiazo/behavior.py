@@ -8,6 +8,7 @@ from plone.app.theming.utils import getAvailableThemes
 from plone.app.theming.interfaces import TEMPLATE_THEME
 from zope.schema.vocabulary import SimpleTerm, SimpleVocabulary
 from collective.behavior.localregistry.behavior import ILocalRegistry
+from collective.behavior.localdiazo import _
 
 
 def getDiazoThemes(context):
@@ -17,7 +18,7 @@ def getDiazoThemes(context):
     terms = [SimpleTerm(theme.rules, theme.rules, theme.title)
              for theme in themes
              if theme.__name__ != TEMPLATE_THEME]
-    terms.insert(0, (SimpleTerm('', '', u'No theme')))
+    terms.insert(0, (SimpleTerm('', '', _(u'No local theme'))))
 
     return SimpleVocabulary(terms)
 
@@ -25,9 +26,11 @@ def getDiazoThemes(context):
 class ILocalDiazo(ILocalRegistry):
     """
     """
-    theme = schema.Choice(title=u"Theme",
-                          vocabulary='collective.behavior.localdiazo.vocabularies.diazo_themes',
-                          required=True
-                          )
+    theme = schema.Choice(
+        title=_(u"Theme"),
+        description=_(u""),
+        vocabulary='collective.behavior.localdiazo.vocabularies.diazo_themes',
+        required=True
+    )
 
 alsoProvides(ILocalDiazo, form.IFormFieldProvider)
