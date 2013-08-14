@@ -6,6 +6,7 @@ contribution of the following people:
 
 - Juan Pablo Giménez
 - Héctor Velarde
+- Marcos F. Romero
 
 You can find an updated list of package contributors on `GitHub`_.
 
