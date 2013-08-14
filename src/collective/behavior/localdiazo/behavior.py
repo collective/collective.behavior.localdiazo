@@ -1,14 +1,15 @@
 # -*- coding: utf-8 *-*
 """ Dexterity behavior to enable a local diazo theme.
 """
-from zope.interface import alsoProvides
-from zope import schema
-from plone.directives import form
-from plone.app.theming.utils import getAvailableThemes
-from plone.app.theming.interfaces import TEMPLATE_THEME
-from zope.schema.vocabulary import SimpleTerm, SimpleVocabulary
-from collective.behavior.localregistry.behavior import ILocalRegistry
 from collective.behavior.localdiazo import _
+from collective.behavior.localregistry.behavior import ILocalRegistry
+from plone.app.theming.interfaces import TEMPLATE_THEME
+from plone.app.theming.utils import getAvailableThemes
+from plone.directives import form
+from zope import schema
+from zope.interface import alsoProvides
+from zope.schema.vocabulary import SimpleTerm
+from zope.schema.vocabulary import SimpleVocabulary
 
 
 def getDiazoThemes(context):
