@@ -14,32 +14,32 @@
         title="Local Diazo theme"
         description="Dexterity behavior to enable a local Diazo theme."
         provides=".behavior.ILocalDiazo"
-        for="collective.behavior.localregistry.behavior.ILocalRegistry"        
+        for="collective.behavior.localregistry.behavior.ILocalRegistry"
         />
 
-	<utility
-    	provides="zope.schema.interfaces.IVocabularyFactory"
-    	component=".behavior.getDiazoThemes"
-    	name="collective.behavior.localdiazo.vocabularies.diazo_themes"
-    	/>
+    <utility
+        provides="zope.schema.interfaces.IVocabularyFactory"
+        component=".behavior.getDiazoThemes"
+        name="collective.behavior.localdiazo.vocabularies.diazo_themes"
+        />
 
-	<browser:page
-	    for=".behavior.ILocalDiazo"
-	    name="local-diazo-setter"
-	    permission="zope2.Public"
-	    class=".browser.LocalRegistrySetter"
-	    />
+    <browser:page
+        for=".behavior.ILocalDiazo"
+        name="local-diazo-setter"
+        permission="zope2.Public"
+        class=".browser.LocalRegistrySetter"
+        />
 
-	<subscriber
-	  	for=".behavior.ILocalDiazo
-	       	 collective.behavior.localregistry.events.ILocalRegistryCreatedEvent"
-	  	handler=".subscribers.set_theme"
-	  	/>
+    <subscriber
+        for=".behavior.ILocalDiazo
+             collective.behavior.localregistry.events.ILocalRegistryCreatedEvent"
+        handler=".subscribers.set_theme"
+        />
 
-	<subscriber
-	  	for=".behavior.ILocalDiazo
-	       	 zope.lifecycleevent.interfaces.IObjectModifiedEvent"
-	  	handler=".subscribers.set_theme"
-	  	/>
+    <subscriber
+        for=".behavior.ILocalDiazo
+             zope.lifecycleevent.interfaces.IObjectModifiedEvent"
+        handler=".subscribers.set_theme"
+        />
 
 </configure>
