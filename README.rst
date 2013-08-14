@@ -8,6 +8,7 @@ Life, the Universe, and Everything
 ----------------------------------
 
 Dexterity behavior to enable a local Diazo theme.
+This package aims to make easier the creation of microsites on big web sites.
 
 Mostly Harmless
 ---------------
