@@ -5,7 +5,7 @@ from setuptools import setup
 
 import os
 
-version = '1.0b2'
+version = '1.0b3.dev0'
 long_description = (
     open("README.rst").read() + "\n" +
     open(os.path.join("docs", "CREDITS.rst")).read() + "\n" +
