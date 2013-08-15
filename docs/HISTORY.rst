@@ -1,7 +1,7 @@
 There's a frood who really knows where his towel is
 ---------------------------------------------------
 
-1.0b2 (unreleased)
+1.0b2 (2013-08-15)
 ^^^^^^^^^^^^^^^^^^
 
 - Removes ```Template``` option from ```theme``` drop-down (closes 
