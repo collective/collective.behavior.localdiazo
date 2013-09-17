@@ -80,3 +80,28 @@ back to default (i.e., no theme is applied)::
     {}
     >>> settings.doctype
     ''
+
+Check virtual hosting
+---------------------
+
+We'll create a special base request indicating virtual hosting and test
+to ensure that a save happens correctly::
+
+   >>> old_script = child.REQUEST._script
+
+Hack that request!::
+
+   >>> child.REQUEST._script = ['dummy_base']
+   >>> child.absolute_url_path()
+   '/dummy_base/plone/child'
+   >>> from plone.subrequest import subrequest
+   >>> response = subrequest(child.absolute_url_path()+'/@@local-diazo-setter')
+   >>> response.getStatus()
+   404
+   >>> response = subrequest('/@@local-diazo-setter', root=child)
+   >>> response.getStatus()
+   200
+
+Return the request to normal::
+
+   >>> child.REQUEST._script = old_script

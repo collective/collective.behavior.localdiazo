@@ -4,7 +4,8 @@ There's a frood who really knows where his towel is
 1.0b3 (unreleased)
 ^^^^^^^^^^^^^^^^^^
 
-- Nothing changed yet.
+- Fix issue preventing setting theme on virtual hosted sites and directories.
+  [davidjb]
 
 
 1.0b2 (2013-08-15)
