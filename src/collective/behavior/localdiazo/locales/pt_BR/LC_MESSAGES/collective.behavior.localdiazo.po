@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: collective.behavior.localdiazo\n"
-"POT-Creation-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"POT-Creation-Date: 2013-09-18 04:38+0000\n"
 "PO-Revision-Date: 2013-08-14 16:58-0300\n"
 "Last-Translator: Héctor Velarde <hector.velarde@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,11 +15,15 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
 
-#: collective/behavior/localdiazo/behavior.py:21
+#: collective/behavior/localdiazo/behavior.py:22
 msgid "No local theme"
 msgstr "Sem tema local"
 
-#: collective/behavior/localdiazo/behavior.py:30
+#: collective/behavior/localdiazo/behavior.py:32
+msgid "Select a theme to enable a different look and feel."
+msgstr ""
+
+#: collective/behavior/localdiazo/behavior.py:31
 msgid "Theme"
 msgstr "Tema"
 
