@@ -7,8 +7,8 @@ collective.behavior.localdiazo
 Life, the Universe, and Everything
 ----------------------------------
 
-Dexterity behavior to enable a local Diazo theme.
-This package aims to make easier the creation of microsites on big web sites.
+Dexterity behavior to enable a local Diazo theme. This package aims to make
+easier the creation of microsites on big web sites.
 
 Mostly Harmless
 ---------------
@@ -40,8 +40,8 @@ To enable this product in a buildout-based installation:
 After updating the configuration you need to run ''bin/buildout'', which will
 take care of updating your system.
 
-Use
-^^^
+Usage
+^^^^^
 
 In Plone's control panel go to 'Dexterity Content Types', select your content
 type, go to the 'Behaviors' tab and enable the 'Local registry' and 'Local
