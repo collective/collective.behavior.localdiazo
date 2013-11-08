@@ -5,7 +5,7 @@ There's a frood who really knows where his towel is
 ^^^^^^^^^^^^^^^^^^
 
 - Fix issue preventing setting theme on virtual hosted sites and directories.
-  [davidjb]
+  [davidjb, ericof]
 - Add translatable string for theme field description.
   [davidjb]
 
