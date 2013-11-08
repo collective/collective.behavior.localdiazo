@@ -3,7 +3,7 @@ Changelog
 
 There's a frood who really knows where his towel is
 
-1.0b3 (unreleased)
+1.0b3 (2013-11-08)
 ^^^^^^^^^^^^^^^^^^
 
 - Fix issue preventing setting theme on virtual hosted sites and directories.
