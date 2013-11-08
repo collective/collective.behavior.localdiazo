@@ -29,13 +29,19 @@ Installation
 
 To enable this product in a buildout-based installation:
 
-1. Edit your buildout.cfg and add ``collective.behavior.localdiazo`` to the
+#. Edit your buildout.cfg and add ``collective.behavior.localdiazo`` to the
    list of eggs to install::
 
     [buildout]
     ...
     eggs =
         collective.behavior.localdiazo
+
+#. If you are using Plone 4.2.x you need to add the following also::
+
+    [versions]
+    ...
+    plone.app.theming = 1.1.1
 
 After updating the configuration you need to run ''bin/buildout'', which will
 take care of updating your system.
