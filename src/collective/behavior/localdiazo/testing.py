@@ -35,4 +35,4 @@ class CollectiveBehaviorLocalDiazo(PloneSandboxLayer):
 COLLECTIVE_BEHAVIOR_LOCALDIAZO_FIXTURE = CollectiveBehaviorLocalDiazo()
 COLLECTIVE_BEHAVIOR_LOCALDIAZO_INTEGRATION_TESTING = \
     IntegrationTesting(bases=(COLLECTIVE_BEHAVIOR_LOCALDIAZO_FIXTURE, ),
-                       name="CollectiveBehaviorLocalDiazo:Integration")
+                       name='CollectiveBehaviorLocalDiazo:Integration')

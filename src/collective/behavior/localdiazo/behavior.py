@@ -28,8 +28,8 @@ class ILocalDiazo(ILocalRegistry):
     """
     """
     theme = schema.Choice(
-        title=_(u"Theme"),
-        description=_(u"Select a theme to enable a different look and feel."),
+        title=_(u'Theme'),
+        description=_(u'Select a theme to enable a different look and feel.'),
         vocabulary='collective.behavior.localdiazo.vocabularies.diazo_themes',
         required=True
     )
