@@ -98,7 +98,8 @@ Hack that request!::
    >>> response = subrequest(child.absolute_url_path()+'/@@local-diazo-setter')
    >>> response.getStatus()
    404
-   >>> response = subrequest('/@@local-diazo-setter', root=child)
+   >>> base = '/'.join(child.getPhysicalPath())
+   >>> response = subrequest(base + '/@@local-diazo-setter')
    >>> response.getStatus()
    200
 
