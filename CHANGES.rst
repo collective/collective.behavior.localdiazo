@@ -6,6 +6,9 @@ There's a frood who really knows where his towel is
 1.0b4 (unreleased)
 ^^^^^^^^^^^^^^^^^^
 
+- Remove dependency on five.grok.
+  [rodfersou]
+
 - Drop support of Plone 4.2 and Python 2.6.
   [rodfersou]
 

@@ -1,13 +1,12 @@
 # -*- coding: utf-8 *-*
-""" Dexterity behavior to enable a local diazo theme.
-"""
+""" Dexterity behavior to enable a local diazo theme. """
 from collective.behavior.localdiazo import _
 from collective.behavior.localregistry.behavior import ILocalRegistry
 from plone.app.theming.interfaces import TEMPLATE_THEME
 from plone.app.theming.utils import getAvailableThemes
-from plone.directives import form
+from plone.autoform.interfaces import IFormFieldProvider
 from zope import schema
-from zope.interface import alsoProvides
+from zope.interface import provider
 from zope.schema.vocabulary import SimpleTerm
 from zope.schema.vocabulary import SimpleVocabulary
 
@@ -24,14 +23,13 @@ def getDiazoThemes(context):
     return SimpleVocabulary(terms)
 
 
+@provider(IFormFieldProvider)
 class ILocalDiazo(ILocalRegistry):
-    """
-    """
+    """Diazo theme selection."""
+
     theme = schema.Choice(
         title=_(u'Theme'),
         description=_(u'Select a theme to enable a different look and feel.'),
         vocabulary='collective.behavior.localdiazo.vocabularies.diazo_themes',
         required=True
     )
-
-alsoProvides(ILocalDiazo, form.IFormFieldProvider)
